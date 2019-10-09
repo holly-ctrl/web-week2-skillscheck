@@ -4,7 +4,7 @@
 //////////////////STEP 1////////////////////
 //Create an array called 'groceries' that contains three grocery items as a string
 
-let groceries = ['salami', 'wine', 'gouda', item];
+let groceries = ['salami', 'wine', 'gouda'];
 
 //////////////////STEP 2////////////////////
 //Create a variable called 'yourName' that is equal to your name as a string
@@ -14,14 +14,15 @@ let yourName = 'Holly';
 //////////////////STEP 3////////////////////
 //Create a function called 'setGroceryListTitle' that takes in one parameter called x. The function should return a string of 'XPARAM's Grocery List'.
 
-function setGroceryListTitle(x){
+function setGroceryListTitle(x) {
     return `${yourName}'s ` + 'Grocery List' 
 }
 
 //////////////////STEP 4////////////////////
 //Create a function called 'addItem' that takes in one paramter called item. Add the item param to the end of the groceries array created above. Inside of addItem, invoke displayData() which is a function we created that takes care of some of the leg work unrelated to this module.
 
-function addItem(item){
+function addItem(item){ 
+    groceries.push(item)
     displayData()
 }
 
@@ -29,7 +30,10 @@ function addItem(item){
 //Create a function called removeItem that takes in one parmater called index. Inside of the function remove the item from the groceries array above using splice. Invoke the displayData() function again.
 
 function removeItem(index){
-    groceries.splice(3, 3)
+    for (let i = 0; i <= groceries.length; i++){
+        if (groceries[i] === item) groceryList.splice(i, 1);
+    }
+displayData()
 }
 
 //////////////////STEP 6////////////////////

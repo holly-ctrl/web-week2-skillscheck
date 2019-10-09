@@ -1,3 +1,69 @@
-.h1 {
-    color: red;
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: grey;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    color: white
+}
+.logo {
+    font-size: 30px;
+    margin: 10px;
+}
+.top {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.blackBox {
+    height: 200px;
+    background-color: black;
+    text-align: center;
+    color: yellow;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    position: relative;
+    top: 74px;
+}
+
+.tealBoxes {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(129, 245, 226);
+}
+
+.orangeBoxes {
+    display:flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.oBox {
+    height: 200px;
+    width: 350px;
+    background-color: orange;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    height: 100px;
+    width: 200px; 
+}
+
+p {
+    height: 100px;
+    width: 300px;
 }
